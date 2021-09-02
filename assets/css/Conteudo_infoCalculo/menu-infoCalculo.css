@@ -1,0 +1,22 @@
+.menu__infocalculo {
+    margin-left: 1300px;
+    position: relative;
+    top: -25px;
+}
+
+.menu__linkInfocalculo {
+    text-transform: uppercase;
+    color: #00458e;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.menu__linkInfocalculo:hover {
+    font-weight: bold;
+}
+
+.menu__listaInfocalculo {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+

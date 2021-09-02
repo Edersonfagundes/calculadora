@@ -1,0 +1,15 @@
+.rodape {
+    background-color: #d1fafa;
+    color: #00458e;
+    display: flex;
+    justify-content: center;
+    padding: 32px; 
+    border-top: 2px solid #00458e;
+}
+
+@media screen and (max-width: 360px) {
+    .texto__rodape {
+        font-size: 0.8rem;
+    }
+}
+

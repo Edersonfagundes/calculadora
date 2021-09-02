@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/cabecalho.css">
+    <link rel="stylesheet" href="assets/css/Conteudo_infoCalculo/menu-infoCalculo.css">
+    <link rel="stylesheet" href="assets/css/Conteudo_infoCalculo/conteudo-infocalculo.css">
+    <link rel="stylesheet" href="assets/css/Conteudo_infoCalculo/botao-formulario.css">
+    <link rel="stylesheet" href="assets/css/rodape.css">
+    <title>Informações calculo</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="assets/img/logohsc.png" alt="logo hsc">
+        <h1 class="cabecalho__titulo">Calculadora Medicamentos</h1>
+    </header>
+    <nav class="menu__infocalculo">
+        <ul class="menu__selecaoInfocalculo">
+            <li class="menu__listaInfocalculo"><a class="menu__linkInfocalculo" href="home.html">Home</a></li>
+            <li class="menu__listaInfocalculo"><a class="menu__linkInfocalculo" href="assets/MANUAL DILUIÇÃO DE ANTIBIÓTICOS - UTI NEOPEDIÁTRICA E UCI.pdf" target="blanck">Manual Diluição</a></li>
+            <li class="menu__listaInfocalculo"><a class="menu__linkInfocalculo" href="home.html">Sair</a></li>
+    </nav>
+    <main class="formulario__infocalculo">
+        <form class="formulario__dados" action="#">
+            <fieldset class="dados__profissional">
+                <h2>Identificação do profissional</h2>
+                <div class="formulario__dadosProfissional">
+                    <label for="matricula">Matrícula:</label> 
+                        <input type="text" size="" id="matri" class="input__padrao" placeholder="Inf aut login">
+                        <label for="funcionario__nome">Nome:</label> 
+                        <input type="text" size="" id="funcionario__nome" class="input__padrao" placeholder="Inf aut login">
+                        <label for="funcionario__setor">Setor:</label> 
+                        <input type="text" id="funcionario__setor" class="input__padrao" placeholder="Inf aut login">
+                </div>
+            </fieldset>
+            <fieldset class="precricao__medica">
+                <h2>Prescrição Médica</h2>
+                <div class="formulario__pescricao"> 
+                    <div class="formulario__prescricaoA">   
+                        <label class="formulario__listaTipo" for="#">Tipo:
+                            <select name="tipo__medicamento" id="tipo__medicamento" required>
+                                <option></option>
+                                <option value="#">Antibiótico</option>
+                                <option value="#">Outro??</option>
+                            </select>
+                        </label>
+                        <label class="Formulario__listaViaAdm" for="#">Via Adm.:
+                            <select name="tipo__viaAdm" id="tipo__viaAdm" required>
+                                <option></option>
+                                <option value="#">IM</option>
+                                <option value="#">IV - Direto</option>
+                                <option value="#">IV - Infusão</option>
+                            </select>
+                        </label>
+                        <label class="Formulario__listaAdministracao" for="#">Administrar:
+                            <label for="formulario__qtdAdministrar"></label> 
+                            <input type="text" id="administar__qtd" class="input__padrao" required>
+                            <select name="tipo__adimistrar" required>
+                                <option></option>
+                                <option value="#">Miligrama</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="formulario__precricaoB">
+                        <label class="Formulario__listaLaboratorio" for="#">Laboratório:
+                            <select name="tipo__tipoLaboratorio" id="tipo__tipoLaboratorio">
+                                <option selected disabled hidden>Selecione uma opçãp</option>
+                            </select>
+                        </label> 
+                        <label class="formulario__listaMedicamento" for="#">Medicamento:
+                            <select name="nome__medicamento" id="nome__medicamento" >
+                                <option selected disabled hidden>Selecione uma opção</option>
+                            </select>
+                        </label>
+                        <label class="Formulario__listaApresentacao" for="#">Apresentação:
+                            <select name="tipo__apresentacao" id="tipo__apresentacao" required>
+                                <option>Selecione uma opção</option>
+                                <option value="#">250 mgFR/AMP</option>
+                                <option value="#">50 mg/mlAMP/2 ml</option>
+                                <option value="#">250 mg/mlAMP/2 ml</option>
+                                <option value="#">1000 mg +200 mgFR/AMP</option>
+                                <option value="#">500 mgFR/AMP</option>
+                                <option value="#">1000 mgFR/AMP</option>
+                                <option value="#">500 mg +1000 mgFR/AMP</option>
+                                <option value="#">50 mgFR/AMP</option>
+                                <option value="#">500 mgFR/AMP</option>
+                                <option value="#">5.000.000 UIFR/AMP</option>
+                                <option value="#">1000 mgFR/AMP</option>
+                                <option value="#">1000 mg IVFR/AMP</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="botao__formulario">
+                        <button class="botao__formularioAcao" value="#" type="submit" id="botao__submit">Calcular</button>
+                        <button class="botao__formularioAcao" value="#" type="reset"> Limpar Conteúdo</button>
+                    </div>
+                    <h3 class="resultado" id="info__evento">(Manipulado por JS)</h3> 
+                </div>
+            </fieldset>
+            <fieldset class="diluicao__antibiotico">
+                <h2>Diluição de antibiótico</h2>
+                    <div class="resultado__calculoDiluicao">
+                        <p> Diluir o pó com <input type="text" id="matri" class="input__padrao" placeholder="Inf do sistema"> e misturar.</p>
+                        <p> Em seringa de 20ml, aspirar <input type="text" id="matri" class="input__padrao" placeholder="Inf do sistema"> do pó diluído e completar com <input type="text" id="matri" class="input__padrao" placeholder="Inf do sistema">.</p>
+                        <p>Dosagem <input type="text" id="matri" class="input__padrao" placeholder="Inf do sistema"></p>
+                        <p>Tempo de adm. <input type="text" id="matri" class="input__padrao" placeholder="Inf do sistema">.</p>
+                        <p>Informação complementar:<label for="mensagem"></label>
+                            <textarea name="" id="" cols="70" rows="2" id="mensagem" class="input-padrao" placeholder="Inf do sistema"></textarea></p>
+                    </div>        
+            </fieldset>
+        </form>
+    </main>
+    <footer class="rodape">
+        <h1 class="texto__rodape">UTI Neopediátrica e UCI - Hospital Santa Cruz</h1>
+    </footer>
+    <script src="content.js"></script>
+</body>
+</html>

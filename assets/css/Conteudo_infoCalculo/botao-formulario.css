@@ -1,0 +1,25 @@
+.botao__formulario {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.botao__formularioAcao {
+    background: #d1fafa;
+    border-radius: 10px;
+    border-color: #00098e67;
+    color: #00458e;
+    transition: all .1s ease-in-out;
+    margin: 1rem 1rem 1rem 1rem;
+    width: 170px;
+    height: 40px;
+    font-size: 1.1rem;
+}
+
+.botao__formularioAcao:hover {
+    background: #5cc091;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+

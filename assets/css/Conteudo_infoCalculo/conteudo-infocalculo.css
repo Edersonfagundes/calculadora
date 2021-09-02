@@ -1,0 +1,57 @@
+h2 {
+    color: #00458e;
+    text-align: center; 
+    font-family: roboto;
+    font-size: 2rem;
+    padding-top: 0.7rem;
+    font-weight: bold;
+}
+
+div {
+    color: #00458e;
+    width: auto;
+    padding: 15px 5px 5px 10px;
+}
+
+fieldset {
+    border: none;
+    background: #d1fafa;
+    border-radius: 10px;
+    margin: 1.5rem;
+    box-shadow: 6px 6px 1em #2b7c7ca6;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.formulario__dadosProfissional, .formulario__prescricaoA, .formulario__precricaoB {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resultado__calculoDiluicao {
+  line-height: 2.5rem;
+}
+
+.resultado {
+    display: none;
+}
+
+.active {
+    display: block;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+

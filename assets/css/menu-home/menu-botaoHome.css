@@ -1,0 +1,30 @@
+.menu__botaoHome {
+    background: #d1fafa;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 6px 6px 1em #2b7c7ca6;
+    color: #00458e;
+    height: 100px;
+    margin: 2rem 0 0 2rem;
+    transition: all .1s ease-in-out;
+    width: 300px;
+}
+
+.menu__botaoHome:hover {
+    cursor: pointer;
+    background: #5cc091;
+    font-weight: bold;
+}
+
+.menu__linkHome {
+    text-decoration: none;
+    color: #00458e;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .menu__botaoHome {
+        height: 80px;
+        width: 200px;
+    }
+}
